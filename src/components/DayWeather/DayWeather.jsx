@@ -13,13 +13,6 @@ const DayWeather = ({ trip }) => {
   const [timeLeft, setTimeLeft] = useState("");
   const { city, startDate } = trip;
 
-  const fetchData = async () => {
-    const weatherData = await fetchWeatherDayData(city);
-    if (weatherData) {
-      setDataDayWeather(weatherData);
-    }
-  };
-
   useEffect(() => {
     const calculateTimeLeft = () => {
       setTimeLeft(calculateTimeDifference(startDate));
@@ -35,8 +28,14 @@ const DayWeather = ({ trip }) => {
   }, [startDate]);
 
   useEffect(() => {
+    const fetchData = async () => {
+      const weatherData = await fetchWeatherDayData(city);
+      if (weatherData) {
+        setDataDayWeather(weatherData);
+      }
+    };
     fetchData();
-  }, [city, fetchData]);
+  }, [city]);
 
   const { days, hours, minutes, seconds } = getTimeLeft(timeLeft);
 
