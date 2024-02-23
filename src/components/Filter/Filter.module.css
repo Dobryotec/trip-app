@@ -1,0 +1,37 @@
+.wrapper-input {
+  position: relative;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+  margin: 0 auto;
+  outline: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 30px;
+  color: rgb(128, 128, 128);
+  transition: all 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
+    rgb(166, 229, 255) 0px 0px 2px 3px, rgb(18, 18, 99) 0px 0px 2px 4px;
+}
+
+.icon-search {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 9px;
+  left: 8px;
+  color: #ccc;
+}

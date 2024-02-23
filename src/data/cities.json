@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "city": "London",
+    "image": "https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055_1280.jpg"
+  },
+
+  {
+    "id": 2,
+    "city": "Paris",
+    "image": "https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_640.jpg"
+  },
+  {
+    "id": 3,
+    "city": "Prague",
+    "image": "https://cdn.pixabay.com/photo/2020/01/26/13/54/prague-4794636_640.jpg"
+  },
+  {
+    "id": 4,
+    "city": "Madrid",
+    "image": "https://cdn.pixabay.com/photo/2015/04/17/09/02/madrid-726957_640.jpg"
+  },
+  {
+    "id": 5,
+    "city": "Monaco",
+    "image": "https://cdn.pixabay.com/photo/2018/05/20/17/41/monaco-3416339_640.jpg"
+  },
+  {
+    "id": 6,
+    "city": "Berlin",
+    "image": "https://cdn.pixabay.com/photo/2018/12/01/00/10/blue-hour-3848856_1280.jpg"
+  },
+  {
+    "id": 7,
+    "city": "Amsterdam",
+    "image": "https://cdn.pixabay.com/photo/2019/08/06/11/58/city-4388160_1280.jpg"
+  }
+]

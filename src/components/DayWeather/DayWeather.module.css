@@ -1,0 +1,73 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 340px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgb(18, 18, 99);
+  color: white;
+}
+
+.day {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.icon {
+  width: 80px;
+  height: 110px;
+}
+.wrapper-image {
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
+}
+.text {
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+}
+
+.degrees {
+  position: absolute;
+  top: -6px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.city {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.time {
+  font-size: 13px;
+  display: flex;
+
+  gap: 20px;
+
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+.time p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  span {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #ccc;
+  }
+}
+
+.congratulations {
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+}

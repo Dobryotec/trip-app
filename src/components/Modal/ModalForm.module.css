@@ -1,0 +1,187 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 61, 51, 0.25);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 330px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 15px 15px 30px #d6d6d6, -15px -15px 30px #ffffff;
+
+  @media screen and (min-width: 767px) {
+    min-width: 550px;
+  }
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.icon-close {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  transform: scale(1.3);
+  color: rgb(18, 18, 99);
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 50px 15px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper-form-element {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.star {
+  padding-right: 2px;
+  color: red;
+}
+
+.form-element-label {
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  outline: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.5s;
+}
+
+.input::placeholder {
+  padding-left: 6px;
+}
+
+.input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: rgb(128, 128, 128);
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(80%);
+  cursor: pointer;
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
+    rgb(166, 229, 255) 0px 0px 2px 3px, rgb(18, 18, 99) 0px 0px 2px 4px;
+}
+
+.block-buttons {
+  display: flex;
+  column-gap: 20px;
+  justify-content: right;
+  padding: 15px 15px 0 0;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid rgb(128, 128, 128);
+  transition: all 0.5s;
+  outline: transparent;
+}
+
+.button-cancel:hover,
+.button-cancel:focus {
+  background-color: rgb(44, 94, 246);
+  color: #fff;
+}
+
+.button-save {
+  color: #fff;
+  background-color: rgb(44, 94, 246);
+}
+
+.button-save:hover,
+.button-save:focus {
+  background-color: #fff;
+  color: rgb(44, 94, 246);
+}
+
+.select-container {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  outline: transparent;
+  transition: all 0.5s;
+}
+
+.select-container select:hover,
+.select-container select:focus {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
+    rgb(166, 229, 255) 0px 0px 2px 3px, rgb(18, 18, 99) 0px 0px 2px 4px;
+}
+.select-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ccc;
+  cursor: pointer;
+}

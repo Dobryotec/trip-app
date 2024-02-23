@@ -1,0 +1,25 @@
+.wrapper-block-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.block-weather {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-weather {
+  width: 100px;
+  height: 100px;
+}
